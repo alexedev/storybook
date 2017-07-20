@@ -235,10 +235,12 @@ const value = date(label, defaultValue);
 If you feel like this addon is not performing well enough there is an option to use `withKnobsOptions` instead of `withKnobs`.
 Usage:
 
-    story.addDecorator(withKnobsOptions({
-       debounce: { wait: number, leading: boolean}, // Same as lodash debounce.
-       timestamps: true // Doesn't emit events while user is typing.
-    }));
+```js
+story.addDecorator(withKnobsOptions({
+  debounce: { wait: number, leading: boolean}, // Same as lodash debounce.
+  timestamps: true // Doesn't emit events while user is typing.
+}));
+```
 
 ## Typescript
 
