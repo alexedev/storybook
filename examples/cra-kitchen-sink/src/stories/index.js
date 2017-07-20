@@ -115,14 +115,14 @@ storiesOf('Button', module)
       </div>
     );
   })
-  .addWithInfo(
-    'with some info',
-    'Use the [info addon](https://github.com/storybooks/storybook/tree/master/addons/info) with its painful API.',
-    context =>
-      <div>
-        click the <InfoButton /> label in top right for info about "{context.story}"
-      </div>
-  )
+  // .addWithInfo(
+  //   'with some info',
+  //   'Use the [info addon](https://github.com/storybooks/storybook/tree/master/addons/info) with its painful API.',
+  //   context =>
+  //     <div>
+  //       click the <InfoButton /> label in top right for info about "{context.story}"
+  //     </div>
+  // )
   .add(
     'with new info',
     withInfo(
